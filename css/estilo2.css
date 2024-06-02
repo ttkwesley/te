@@ -1,0 +1,126 @@
+body,
+html {
+    height: 100%;
+    background-color: black;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+#container {
+    position: relative;
+    width: 90%;
+    max-width: 800px;
+}
+
+#img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#botao {
+    position: absolute;
+    bottom: 70%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#botao button {
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: rgba(16, 93, 165, 0.877);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 0 10px rgba(4, 116, 221, 0.938), 0 0 20px rgba(16, 93, 165, 0.7), 0 0 30px rgba(16, 93, 165, 0.7), 0 0 40px rgba(16, 93, 165, 1), 0 0 70px rgba(16, 93, 165, 1), 0 0 80px rgba(16, 93, 165, 1), 0 0 100px rgba(16, 93, 165, 1);
+    animation: float 2s ease-in-out infinite;
+    transition: transform 0.3s ease-in-out, padding 0.3s ease-in-out;
+}
+
+#botao button:hover {
+    transform: scale(1.1);
+    padding: 20px 40px;
+}
+
+#botao a {
+    text-decoration: none;
+    color: white;
+    font-size: 2vw;
+    white-space: nowrap;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+}
+
+#tele {
+    margin-left: 10px;
+    height: 2.5vw;
+}
+
+/* Keyframes para o efeito de flutuação */
+@keyframes float {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Media query para dispositivos com largura máxima de 768px (tablets e smartphones em modo paisagem) */
+@media only screen and (max-width: 768px) {
+    
+    #container{
+
+        width: 100%;
+    }
+    
+    #botao {
+        bottom: 69%;
+    }
+
+    #botao button {
+        font-size: 5vw;
+        padding: 3vw 6vw;
+    }
+
+    #botao a {
+        font-size: 4vw;
+    }
+
+    #tele {
+        height: 4vw;
+    }
+}
+
+/* Media query para dispositivos com largura máxima de 480px (smartphones em modo retrato) */
+@media only screen and (max-width: 576px) {
+    
+    #container{
+
+        width: 100%;
+    }
+    
+    #botao {
+        bottom: 70%;
+    }
+
+    #botao button {
+        padding: 3vw 4vw;
+    }
+
+    #botao a {
+        font-size: 5vw;
+    }
+
+    #tele {
+        height: 6vw;
+    }
+}

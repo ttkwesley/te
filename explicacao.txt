@@ -1,0 +1,20 @@
+#body, html: Aqui estamos aplicando estilos ao elemento HTML e ao corpo da página. Definimos a altura como 100% para que o corpo ocupe toda a altura da janela do navegador. Além disso, estamos usando o Flexbox para centralizar o conteúdo verticalmente e horizontalmente na página.
+
+#container: Estamos estilizando um elemento com o ID "container". Este elemento é relativo para que possamos posicionar os elementos filhos absolutamente dentro dele. Definimos uma largura máxima de 800px e largura de 90% para que o conteúdo não fique muito largo em telas maiores.
+
+#img: Este estilo é aplicado à tag de imagem dentro do contêiner. Estamos definindo que a largura da imagem deve ser de 100% e a altura deve ser automática, o que garante que a imagem mantenha sua proporção original.
+
+#botao: Estamos estilizando um elemento com o ID "botao", que provavelmente contém um botão ou link. Definimos sua posição como absoluta para que possamos posicioná-lo em relação ao seu contêiner pai. Ele é posicionado no fundo da página (10% do fundo) e no centro horizontal (50%). Além disso, aplicamos uma rotação de -5 graus usando transformação CSS para um efeito visual.
+
+#botao button: Estamos estilizando um botão dentro do elemento com o ID "botao". Definimos borda arredondada, preenchimento, cor de fundo, cor do texto, entre outros estilos para criar um botão atraente. Também adicionamos uma animação de flutuação usando keyframes CSS.
+
+#botao button
+: Este estilo é aplicado quando o botão é hover. Aumentamos ligeiramente o tamanho do botão e o preenchimento para dar um efeito de destaque.
+
+#botao a: Estamos estilizando um link dentro do elemento com o ID "botao". Definimos a cor do texto, tamanho da fonte e outras propriedades de estilo.
+
+#tele: Estamos estilizando uma imagem dentro do link dentro do elemento com o ID "botao". Definimos a margem esquerda e a altura da imagem.
+
+@keyframes float: Esta regra define uma animação de flutuação para o botão. Ele move o botão para cima e para baixo ligeiramente para criar um efeito de flutuação.
+
+Media queries: Estamos definindo regras de mídia para diferentes tamanhos de tela. Para telas com largura máxima de 768px (tablets e smartphones em modo paisagem), ajustamos a posição e o tamanho do botão e o tamanho do texto. Para telas com largura máxima de 480px (smartphones em modo retrato), fazemos ajustes adicionais no tamanho do botão e do texto para garantir que sejam legíveis e acessíveis em telas menores.
